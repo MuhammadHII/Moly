@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+  <head>        
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Blank App Designer Cordova Web App Project Template</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+
+    <style>
+      @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }         @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+    <script src="cordova.js" id="xdkJScordova_"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/init-app.js"></script>
+
+    <script src="xdk/init-dev.js"></script>
+    <script src="js/cryption.js"></script>
+
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+    <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+    <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>      
+     
+      
+  </head>
+
+  <body>
+    <div class="upage laodingcss" id="mainpage">
+      <div class="upage-outer">
+        <div class="uib-header header-bg container-group inner-element uib_w_1" data-uib="layout/header" data-ver="0">
+          <h2 id="h2"></h2>
+          <div class="widget-container wrapping-col single-centered"></div>
+          <div class="widget-container content-area horiz-area wrapping-col left">
+            <button class="btn widget uib_w_2 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnBack" onclick="btnbacknext()" style="visibility: hidden;background-color:#037dc5;color:#fff;margin-top:20px;border:2px solid #fff;font-size: 14px;">السابق</button>
+              
+          </div>
+          <div class="widget-container content-area horiz-area wrapping-col right">
+
+          </div>
+        </div>
+        <div id="loadingPage" class="upage-content ac0 content-area vertical-col left">
+          
+          <img src="images/splash.gif" style="height:180%;" />
+
+        </div>
+        <div class="upage-content vertical-col left hidden" id="homepage">
+          <span class="widget uib_w_25 d-margins badge" data-uib="twitter%20bootstrap/badge_and_label" data-ver="1" id="welcomeuser" dir="rtl">Loading Data</span>
+          <span class="widget uib_w_26 d-margins badge" data-uib="twitter%20bootstrap/badge_and_label" data-ver="1" id="timeresult" style="visibility: hidden;position:fixed;">.</span>
+          <div class="panel-group no_wrap widget uib_w_4 d-margins" id="bs-accordion-0" dir="rtl">
+
+            <div class="panel widget uib_w_5 panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-0" data-parent="#bs-accordion-0">الخدمات</a>
+       </h4>
+              </div>
+              <div id="bs-accordion-group-0" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area vertical-col">
+                      <span class="uib_shim"></span>
+                      <div class="panel widget panel-default uib_w_6" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-1" data-parent="#bs-accordion-1">الأفراد والشركات</a>
+       </h4>
+                        </div>
+                        <div id="bs-accordion-group-1" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
+                              <div class="widget-container content-area vertical-col">
+                                <span class="uib_shim"></span>
+                                <div class="panel widget panel-default uib_w_7" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-2" data-parent="#bs-accordion-2">الأفراد</a>
+       </h4>
+                                  </div>
+                                  <div id="bs-accordion-group-2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col" onclick="openlinks('http://elaw.media.gov.kw/Pages/MediaRegistrationPersonal.aspx','افراد-طلب ترخيص جديد')">
+                                          <a>طلب ترخيص جديد
+                                        </a>
+                                        </div>
+                                        <div class="widget-container content-area vertical-col" onclick="openlinks('http://elaw.media.gov.kw/Pages/Commingsoon.aspx','افراد-تعديل بيانات الترخيص')">
+                                          <a>تعديل بيانات الترخيص</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel widget panel-default uib_w_8" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-3" data-parent="#bs-accordion-3">الشركات</a>
+       </h4>
+                                  </div>
+                                  <div id="bs-accordion-group-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col" onclick="openlinks('http://elaw.media.gov.kw/Pages/MediaRegistrationCompany.aspx','شركات - طلب ترخيص جديد')">
+                                          <span class="uib_shim"></span><a>طلب نرخيص جديد</a>
+                                        </div>
+                                        <div class="widget-container content-area vertical-col" onclick="openlinks('http://elaw.media.gov.kw/Pages/MediaRegistrationCompanyExist.aspx','شركات - ترخيص الجهات المرخصة')">
+                                          <span class="uib_shim"></span><a>طلب اصدار ترخيص للصحف الورقية والقنوات المرئية والمسموعة المرخصة</a>
+                                        </div>
+                                        <div class="widget-container content-area vertical-col" onclick="openlinks('http://elaw.media.gov.kw/Pages/Commingsoon.aspx','شركات - تعديل بيانات ترخيص')">
+                                          <span class="uib_shim"></span><a>تعديل بيانات الترخيص</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel widget panel-default uib_w_9" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-4" data-parent="#bs-accordion-4">جهات حكومية</a>
+       </h4>
+                        </div>
+                        <div id="bs-accordion-group-4" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
+                              <div class="widget-container content-area vertical-col" onclick="openlinks('http://elaw.media.gov.kw/pages/GovermentNewReqistration.aspx','جهات حكومية - طلب اخطار')">
+                                <span class="uib_shim"></span><a>طلب إخطار</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel widget panel-default uib_w_10" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-5" data-parent="#bs-accordion-5">جمعيات النفع العام والنقابات والإتحادات</a>
+       </h4>
+                        </div>
+                        <div id="bs-accordion-group-5" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
+                              <div class="widget-container content-area vertical-col" onclick="openlinks('http://elaw.media.gov.kw/pages/GeneralOrganizationsNewRegistration.aspx','جمعيات النفع العام - طلب اخطار')">
+                                <span class="uib_shim"></span><a>طلب إخطار</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel widget panel-default uib_w_11">
+              <div class="panel-heading">
+                <h4 class="panel-title" onclick="getrequistsData()">
+           <a>الطلبات</a>
+       </h4>
+              </div>
+            </div>
+
+            <div class="panel widget panel-default uib_w_12" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+              <div class="panel-heading">
+                <h4 class="panel-title" onclick="getlicensesData()">
+           <a>التراخيص</a>
+       </h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- <input type="button" value="Reset Form" onClick="tog()" />
+          <input type="button" value="Reset Form" onClick="$('#bs-accordion-group-0').collapse('show')" />
+			<input type="button" value="Reset Form" onClick="$('#bs-accordion-group-0').collapse('show')" />
+			<input type="button" value="Reset Form" onClick="$('#bs-accordion-group-0').collapse('hide')" />
+			<input type="button" value="Reset Form" onClick="$('#bs-accordion-group-0').collapse('hide')" />
+			<input type="button" value="Reset Form" onClick="$('#bs-accordion-group-0').collapse('toggle')" />
+			<input type="button" value="Reset Form" onClick="$('#bs-accordion-group-0').collapse('toggle')" />-->
+        </div>
+
+        <div id="Login" class="upage-content vertical-col left hidden">
+          <div class="widget uib_w_13 scale-image d-margins" data-uib="media/img" data-ver="0">
+
+            <figure class="figure-align">
+
+              <img src="images/Untitled.png" style="  width: 100%; height: 100%;  left: 0px; top: 0px; z-index: -1;">
+
+              <figcaption data-position="bottom"></figcaption>
+            </figure>
+          </div>
+            
+            <div class="login-block">        
+        <input type="text" id="txtUserN" value="" placeholder="اسم المستخدم" />
+        <input type="password" id="txtPassW" value="" placeholder="كلمة المرور" />
+                <div style="direction:rtl;font-size: 14px;font-family: Montserrat;">
+                <input style="margin-bottom:3%;margin-left:3px;" type="checkbox" id="chksaveUP">حفظ كلمة المرور
+                </div>
+                <div style="text-align: center;">
+            <span style="color:red;font-size: 14px;font-family: Montserrat;margin-bottom:3%;" data-ver="1" id="lbl1"></span>
+            </div>
+        <button data-uib="twitter%20bootstrap/button" data-ver="1" id="btnLogin" onclick="Authenticate()">تسجيل الدخول</button>
+                
+                
+                <button style="display:none;background-color:red;color:white;" id="exitApp" onclick="exitApp()">تسجيل الخروج</button>
+                
+    </div>            
+          
+          
+
+          <button style="font-size: 14px;font-family: Montserrat;margin-top:1%;color:white;text-decoration:none;" class="btn widget uib_w_16 d-margins btn-xs btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="openlinks('http://elaw.media.gov.kw/pages/ForgetPassword.aspx','استرجاع كلمة المرور')">.نسيت كلمة المرور اضغط هنا</button>
+          <button style="font-size: 14px;font-family: Montserrat;color:white;text-decoration:none;" class="btn widget uib_w_17 d-margins btn-xs btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="openlinks('http://elaw.media.gov.kw/pages/Register.aspx','تسجيل جديد')">.لانشاء حساب جديد اضغط هنا </button>
+
+        </div>
+        <div id="requests" class="upage-content vertical-col left hidden">
+          <div class="panel-group no_wrap widget uib_w_21 d-margins" id="requestitems" dir="rtl">
+
+          </div>
+          <button class="btn widget uib_w_28 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnloadmorereq" onclick="req(publicrequestXHR , 'requestitems' ,'load')" style="visibility: hidden;">تحميل المزيد</button>
+        </div>
+
+        <div id="Licenses" class="upage-content vertical-col left hidden">
+          <div class="panel-group no_wrap widget uib_w_22 d-margins" id="licensesitem" dir="rtl">
+          </div>
+          <button class="btn widget uib_w_27 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnloadmorelic" onclick="lice(publicrequestXHR , 'licensesitem' ,'load')" style="visibility: hidden;">تحميل المزيد</button>
+        </div>
+
+        <div id="Links" class="upage-content vertical-col left hidden">
+
+          <!--<div class="widget uib_w_23 d-margins iframe-size" data-uib="media/iframe" data-ver="0" style="position:fixed;left:0;right:0;bottom:0;top:0px;height:100%;width:100%">
+          <iframe onload="iframeloaded()" id="frame1" height="100%" width="100%"></iframe>
+          </div>-->
+          <div class="widget uib_w_23 d-margins iframe-size" data-uib="media/iframe" data-ver="0" style="position:fixed;left:0;right:0;bottom:0;top:0 px;height:100%;width:100%;padding-top:15px ;">
+            <br>
+            <br>
+            <iframe  onload="iframeloaded();" id="frame1" height="85%" width="100%" name="frame1" ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
